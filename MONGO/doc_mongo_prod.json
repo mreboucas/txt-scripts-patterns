@@ -1,0 +1,26 @@
+
+
+
+
+ADD in file /etc/mongod.conf:
+
+security:
+  authorization: enabled
+
+sudo iptables -I INPUT -p tcp --dport 27017 --syn -j ACCEPT sudo service iptables save
+
+db.createUser({user: 'admin',pwd: 'ygnuhv6121934',roles: [ { role: 'userAdminAnyDatabase', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
+db.createUser({user: 'root',pwd: 'uhbyhnghj78',roles: [ { role: 'root', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
+
+
+use pca
+db.createUser( { user:"user_pca",pwd: "tfcvgr45",roles: [{ role: "readWrite", db: "pca" }],mechanisms: ["SCRAM-SHA-256"]})
+
+
+db.createUser( { user:"user_sip3w",pwd: "v9ElsX5+VaIWirZbiEPTKzvhQyJf7FR3QBSyS9wgSDqxTmfW2j8ttzRAfQAaPdp+/Ayk1Z/cvJwx/MUv",roles: [{ role: "readWrite", db: "sip3w" }],mechanisms: ["SCRAM-SHA-256"]})
+
+db.createUser( { user:"user_id_digital",pwd: "KWxb6hPBNF8iE/9K+YCWhL6YDkCgKZzF9sDxTbyYq3QK4yifu+Xef1Ayjkuq6J5VhIVyO6LLerY2cJ6L",roles: [{ role: "readWrite", db: "id_digital" }],mechanisms: ["SCRAM-SHA-256"]})
+
+db.createUser( { user:"user_saude",pwd: "9mXKyE5a4QW7fIyf++bfXvdY+G/80RMhzisqPsobV6IyBwV1kAqp6a684NuKqMIr4bQfEQ60ks58qz95",roles: [{ role: "readWrite", db: "saude" }],mechanisms: ["SCRAM-SHA-256"]})
+
+

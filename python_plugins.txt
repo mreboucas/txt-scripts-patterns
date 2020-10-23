@@ -1,0 +1,24 @@
+sudo apt install python-pip
+
+
+Linux:
+
+> Install flask as global package:
+
+sudo pip install flask
+
+> Install in virtualenv
+
+virtualenv venv
+source venv
+pip install flask
+
+Install system package
+
+    debian, ubuntu
+
+    apt-get install python-flask
+
+
+Plugin VsCode
+	pip install pylint

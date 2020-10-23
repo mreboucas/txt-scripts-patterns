@@ -1,0 +1,54 @@
+
+sudo vi /etc/yum.repos.d/mongodb-org-4.0.repo
+
+[mongodb-org-4.0]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.0/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
+
+
+yum repolist
+
+Output
+. . .
+repo id                          repo name
+base/7/x86_64                    CentOS-7 - Base
+extras/7/x86_64                  CentOS-7 - Extras
+mongodb-org-3.2/7/x86_64         MongoDB Repository
+updates/7/x86_64                 CentOS-7 - Updates
+. . .
+
+sudo yum install mongodb-org
+
+sudo systemctl start mongod
+
+sudo vi /etc/security/limits.d/20-nproc.conf
+
+mongod soft nproc 32000
+
+sudo firewall-cmd --zone=public --add-port=27017/tcp --permanent
+sudo firewall-cmd --reload
+
+
+
+
+
+
+
+ADD in file /etc/mongod.conf:
+
+security:
+  authorization: enabled
+
+db.createUser({user: 'admin',pwd: 'SSDW/Thtywtu9vDYl0T9WHk9Ujze16WH0LUD9l+/1nuJXyOmMCG/KeZzmtoXoxL9BZ8MVgWf5ZEqj4bg',roles: [ { role: 'userAdminAnyDatabase', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
+db.createUser({user: 'root',pwd: 'DHpp8YSeN8ymLTIBUUIw/yOEOvglfVBC5VJSV1kb7KXrj4HmRQBtOhCtUvdOjPC1P/rjSN8b684ISOmV',roles: [ { role: 'root', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
+
+
+Faça a troca para o banco pca
+use pca
+
+crie o usuario 
+db.createUser( { user:"user_pca",pwd: "IbFVr8lcBilLhuXntOlKbtbq0/HhfTdgDGXpU6fmaodQNEnPsIXyrReqYEHW4GkrFsAr6314Mg7yAASo",roles: [{ role: "readWrite", db: "pca" }],mechanisms: ["SCRAM-SHA-256"]})
+

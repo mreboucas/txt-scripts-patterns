@@ -1,0 +1,10 @@
+[
+    {
+        "auth": "pFDjenRy5seB/2LOSOazfW/HznBDrCCMFysgueC60JGQXNh87s4aNAqCJW0IAq2fT7pzoH+CYRshX7DY",
+        "host": "172.25.100.157",
+        "name": "test",
+        "port": 6379,
+        "timeout_connect": 60000,
+        "timeout_execute": 60000
+    }
+]

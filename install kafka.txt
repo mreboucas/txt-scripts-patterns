@@ -1,0 +1,39 @@
+0 - install docker
+https://www.digitalocean.com/community/tutorials/como-instalar-e-usar-o-docker-no-centos-7-pt
+
+Install kafka
+
+1 - general tutorial: https://medium.com/trainingcenter/apache-kafka-codifica%C3%A7%C3%A3o-na-pratica-9c6a4142a08f
+1.1 - install docker-compose: https://docs.docker.com/compose/install/#install-compose
+
+2 - instal confluent server: https://docs.confluent.io/current/quickstart/ce-docker-quickstart.html#getting-started-with-docker-compose
+
+3 - client kafka:
+https://www.conduktor.io/
+
+4 - instalar o conduktor : https://www.conduktor.io/
+
+5 - autenticação: https://www.conduktor.io/docs (Não deu certo, pois no example ele usa o cluster security)
+
+6 - example client java connecting with kafka: https://dzone.com/articles/kafka-producer-and-consumer-example
+
+7 - producer/consumer kafka with spring boot: https://www.confluent.io/blog/apache-kafka-spring-boot-application/
+
+8 - define external volumes zookeeper/kafka
+https://docs.confluent.io/3.1.1/cp-docker-images/docs/operations/external-volumes.html
+
+
+Kafka cluster
+http://java-demos.blogspot.com/2018/11/setting-up-confluent-kafka-in-docker-in_31.html
+
+
+#Security por user/key
+https://github.com/bitnami/bitnami-docker-kafka
+
+Máquina 172.25.100.157
+
+=> projetos clonados:
+/projects-cloned/cp-docker-images/examples/kafka-single-node/
+
+mkdir and copy kafka-single-node to:
+/docker-compose/kafka-single-node
