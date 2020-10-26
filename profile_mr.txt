@@ -1,0 +1,191 @@
+Nos últimos 11 anos eu tenho trabalhado a maior fatia de tempo na esfera governamental com foco em java, passando pelos órgãos
+SmS (Secretaria Mun de Sadúde de Fortaelza)
+Cagece (companhia de água e esgoto do ceará)
+Fundei uma startup (open mind)
+e estou atualmente na
+SSPDS (sec de segurança pública e defesa social)
+
+######## SAÚDE ######## 
+Desenvolvedor e analista
+
+Trabalhei basicamente com Java EE, serlvet, JSP, JPA, struts, hibernate, groovy and grails. Base era postgresql.
+
+######## CAGECE ######## 
+Tive a portunidade de ir Cagece (órgão do governo de economia mista com outra cultura e vertente de processos e organização - referÊncia no governo do estado. Um órgão com capital próprio o que de certa forma facilita a execução de projetos.)
+
+Lá eu atuei como desenvolvedor, analista, mesclando um perfil de arquiteto e tech leader de vários times/projetos. Também tive experiência com gestão de projetos, scrum master, gestão de processos (BPM e BPMN), participei de várias bancas de seleção de analistas e estagiários (elaboração de provas, testes práticos e entrevistas). No que se refere aos estagiários eu fui responsável direto pela mentoria desses. Fui tambémm analista titular do comitê de definição de padrões, práticas, elaboração de templates de software e definição novas tecnologias/frameworks. Sempre tive o perfil de promover workshops para disseminar a cultura do conhecimento e fomentar novas ideas dentro dos times, objetivando sempre a melhor concepção e execução dos projetos.
+
+Atuei no desenvolvimento de sistemas WEB, APPS e de APIS reusáseis as quais essas foram reusadas em inúmeros projetos (envio de e-mail, compressão de arquivos, Rest Client, utilitários em geral que eram comuns dos projetos);
+
+Nos projetos os quais participei tive a oprtunidade e gratidão de fazer parte de 2 projetos que ganharam prêmios em um concurso de inovação anual da própia empresa:
+
+1) Um que era tech leader ficou em 3 lugar (sisregmobile) - app para realizar input de dados em real time das vistorias que eram realizadas pelas equipes de audorias do interior, região metropolitada e capital.
+2) O outro que participei como analista convocado (tirando férias de outro analista) que foi o OSMobile(1° lugar)  - App que gerencia as OS das solicitações de serviço da população em geral.
+
+Ambos os projetos agregaram muito valor ao negócio, dando maior celeridade, precisão e uma imensa economia de papel.
+
+Ambos foram como android nativo e usando backend com serviços em EJB (resteasy) e base oracle/postgresql.
+
+Ganhei um ano o Prêmio do gente que surpreende.
+
+Ainda na cagece tive a hora que em 2 anos eu fui finalista do programa "gente que surpreende - profissionais que mais se destacavam  nas suas respectivas áreas de atuação (no meu caso era gerência de T.I)", na qual uma delas tive a honra de ser o "vencedor".
+
+
+Tecnologias utilizadas: java (6 e 8), Servlet (1.0 e 3.0), Struts, Jsp, JPA/Hibernate, JDBC, Spring JDBC, EJB,
+CDI, JSF, primefaces, jquery, javascript, ES5, Rest, DWR, Vue, Maven, Apache POI, Jenkins, CI-CD, Junit, Oracle e Postgresql. Scrum, Design Thinkins
+
+Ainda na cagece tive a oportunidade de começar, no último ano que estive lá, a atuar na equipe de devops: docker e arquitetura de microserviços.
+
+Foi quando surgiu uma oprtunidade de eu ir para:
+
+######## SSPDS ######## 
+- Realizando um papel de analista de Devops;
+- Onde estou como responsável pela arquitetura de microserviços (concepção, análise, implementação e manutenção);
+- Responsável pela API GATEWAY dos microserviços (autenticação e auditoria)
+- Responsável pela cloud com docker swarm;
+- Responsável pela nova cloud do openshift (está sendo implantada);
+- Responsável pela criação de templates dos microservices em spring boot (template DB relacional e NoSQL (MVC/REACTIVE)) e fui responsável pela concepção e atuei como orientador da criação do template em react. Todos esses templates para novos projetos.
+  Estou analisando e estudando a implementação de templates para novos microserviços em node e também em go, mas está em análise.
+- Criei a padronização de código para exposição dos serviços e também o versionamento desses.  
+- Nossos projetos tem embasamento muito direcionado a população, onde temos algorítmos:
+   de reconhecimento facial;
+   de reconhecimento veícular;
+   leitura biométrica e ocr para as placas dos veículos
+   reconhecimento telefônico e captura geoferrenciada das ligações das denúncias
+   além de integrações com outros órgãos do gov estadual e federal
+
+Tecnologias utilizadas: java (8), Spring boot, swagger, nginx, kafka, python, react, flutter, eureka (service discover - netflix), docker/docker swarm, mongodb, redis, elasticsearch. Scrum, Design Thinkink, canvas
+
+######## OPENMIND ######## 
+Uma starup fundada por mim para elaboração de projetos pessoais, assim também como ser um celeiro para estudo, formentação de novas tecnologias e na tentativa de realizar aplicabilidade dessas dentro dos órgãos/entidades num momento oportuno.
+
+Tecnologias utilizadas: Cloud: AWS, Openshift, kafka, service mesh, ek.
+
+-------------------------------------------
+PONTOS FORTES X FRACOS
+-------------------------------------------
+>>>> FORTES
+Proatividade;
+Se lanço para novos desafios;
+Comprometido com as demandas/projetos;
+Tenho perfil de líder nato;
+Otimista (sempre vejo o lado bom das coisas, por mais anômalas que elas sejam)
+Versatilidade
+Trabalho bem em equipe
+Tenho habilidades de softskilss (bom relacionamento, motivador, boa comunicação, capacidade de contornar divergências etc)
+
+>>>> FRACOS
+1) Quando estou com um problema ou uma demanda que tenha uma certa criticidade, eu faço uma imersão muito grande. Isso faz com que eu fique altamente vidrado. Muitas desses momentoss nem sequer eu dou uma pausa para ir ao banheiro, tomar água, café um tomar um novo ar.
+Mas eu sempre restou buscando novas técnicas como o pomodoro para me auxiliar a lidar com essas situações de forma mais sutil.
+
+2) Sou muito crítico e questionador. Mas eu estou realizando alguns leituras e estudos com o objetivo de me conter mais em determinadas situações.
+
+-------------------------------------------
+SPRING MICROSERVICES
+-------------------------------------------
+Resource 
+  @RestController
+  @GetMapping("/")
+   @PostMapping
+   @DeleteMapping
+Service
+ @Service
+
+Repository
+ @Respository extends
+  JpaRepository
+  CrudRepository
+Reactive  
+  ReactiveCrudRepository
+
+Model
+Relacional
+ @Entity
+ 
+NoSql
+@Document
+@RedisHash("customer")
+
+Configuration
+@SpringBootApplication
+@EnableDiscoveryClient
+@EnableFeignClients
+public class ApproachApplication {
+	main
+}
+
+
+@Convert(converter = ClobToByteArrayCvt.class)
+@JsonIgnore
+
+-------------------------------------------
+	BTG - 6º MAIOR
+-------------------------------------------
+O BTG é referência é na área de investimentos, sendo considerado o maior de investimentos da américa latina e o 6º mais podedoro do Brasil em um contexto global. O que me chamou atenção foi pelo fato dele ser um dos maiores em ativos florestais do mundo (achei isso bem legal). Possui uma cultura de desenvolvimento progressiva e uma diversidade cultural grandiosa. Além de tudo isso, temos o sistema bancário do brasil como sendo um dos mais requintados do MUNDO. COm a implantação do PIXIS ai é que as coisas serão mais interessantes. Bem, mas sabendo que o BTG está abrindo seu leque para pequenos investidores, estou bastante convicto do incremento de capital que esse terá e estou apto e fazer parte do time e entregar os melhores soluções, sempre alinhadas aos principais interesses corporativos independente do papel que eu vá estar ocupando.
+
+-------------------------------------------
+PQ DEVEMOS TE CONTRATAR
+-------------------------------------------
+Pelos bons resultados que já apresentei e venho apresentando na esfera governamental, eu possuo boa capacidade de lidar e de se comunicar com qualquer nível hierarquico institucional. Posso também estar aplicando minhas capacidades, habilidades e proatividade para entregar os melhores resultados, objetivando a agregação de valor sempre alinhados aos interesses do banco. Deixo claro também que sou adepto a novos desafios e captação de novos conhecimentos. Mesmo meu forte seja o back-end e tendo um leque de tecnologias como sendo minhas habilidades primárias, isso não me exclui da vontade e aprender coisas novas e também poder atuar com outros times em outras posições/tecnologias etc.
+Eu sempre combino:
+C - conhecimento
+H - habilidades
+A - atitude
+
+
+---------------------
+Perguntas
+---------------------
+KAFKA?
+
+AWS (montagem da máquina, db, loud balancing horizontal/vertical?) - analista só, com developers
+
+Quais Padrões vcs utilizam nos microservices?
+ - Service Mesh (istio, kiali, jeager, cilium)
+ - Transações distribuídas entre os microservices?
+ - Api (transação e autorização, como estão estruturadas tem JWT?)
+
+Abertura para novas tecnologias, existe um comitê aprovador, como se procede?
+
+---
+Gestão
+---
+Time de quantas pessoas e como ele é organizado em termos de papéis e coordenação?
+
+Como as demandas são priorizadas e conduzidas?
+
+---
+Vagas
+---
+Para essa squad, estão sendo contratados para se formar um novo time ou é para compor um time com um projeto em curso? São qnts pessoas?
+
+
+--------------
+Spring security
+Spring batch (reader, process, writer)
+
+
+[S]ingle Responsibility Principle (Princípio da Responsabilidade Única)
+[O]pen/Closed Principle (Princípio do Aberto/Fechado)
+[L]iskov Substitution Principle (Princípio da Substituição de Liskov)
+[I]nterface Segregation Principle (Princípio da Segregação de Interfaces)
+[D]ependency Inversion Principle (Princípio da Inversão de Dependências)
+Depender de abstrações e não de classes concretas]
+“Módulos de alto nível não devem depender de módulos de baixo nível.”
+“As abstrações não devem depender de detalhes. Os detalhes devem depender das abstrações.”
+
+
+Bento - Angular
+Bruno - Java
+
+Java version?
+Angular -  ?
+Arquitetura de microservices
+
+Diego - Magalu
+
+CTE - conhecimento de transporte eletrônico
+Docker - 
+
+Tiago Catoto
+Diego Garcia
