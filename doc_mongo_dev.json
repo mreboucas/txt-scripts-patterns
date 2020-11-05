@@ -42,13 +42,13 @@ ADD in file /etc/mongod.conf:
 security:
   authorization: enabled
 
-db.createUser({user: 'admin',pwd: 'SSDW/Thtywtu9vDYl0T9WHk9Ujze16WH0LUD9l+/1nuJXyOmMCG/KeZzmtoXoxL9BZ8MVgWf5ZEqj4bg',roles: [ { role: 'userAdminAnyDatabase', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
-db.createUser({user: 'root',pwd: 'DHpp8YSeN8ymLTIBUUIw/yOEOvglfVBC5VJSV1kb7KXrj4HmRQBtOhCtUvdOjPC1P/rjSN8b684ISOmV',roles: [ { role: 'root', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
+db.createUser({user: 'admin',pwd: 'PASSWORD',roles: [ { role: 'userAdminAnyDatabase', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
+db.createUser({user: 'root',pwd: 'PASSWORD',roles: [ { role: 'root', db: 'admin' } ],mechanisms: ["SCRAM-SHA-256"] })
 
 
 Faça a troca para o banco pca
 use pca
 
 crie o usuario 
-db.createUser( { user:"user_pca",pwd: "IbFVr8lcBilLhuXntOlKbtbq0/HhfTdgDGXpU6fmaodQNEnPsIXyrReqYEHW4GkrFsAr6314Mg7yAASo",roles: [{ role: "readWrite", db: "pca" }],mechanisms: ["SCRAM-SHA-256"]})
+db.createUser( { user:"user_pca",pwd: "PASSWORD",roles: [{ role: "readWrite", db: "pca" }],mechanisms: ["SCRAM-SHA-256"]})
 
