@@ -1,0 +1,26 @@
+/*****
+ Data maior que N dias.
+**/
+
+db.getCollection('COLLECTION_NAME').find({$where: function() {
+    return (new Date(this.DATE_FIELD_NAME) > new Date(Date.now() - 30*24*60*60 *1000));
+    }}).count();
+    
+    
+    db.getCollection('COLLECTION_NAME').find({});
+    
+db.getCollection('COLLECTION_NAME').find({'DATE_FIELD_NAME' : {$lte : ISODate("2021-05-01T00:00:00.000Z")}}).count(); 
+
+
+db.getCollection('COLLECTION_NAME').find({'DATE_FIELD_NAME' : {$lte : new Date(Date.now() - 30*24*60*60 *1000)}}).count(); 
+
+
+11873
+/** menos 30 dias*/
+print(new Date(Date.now() - 30*24*60*60 *1000))
+
+
+/*****
+ outro script
+**/
+    
