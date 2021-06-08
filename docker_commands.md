@@ -235,12 +235,20 @@ home/seu_usuario/.docker/config.json
 add o conteúdo
 {
   "insecure-registries": [
-    "172.25.100.75:3000"
+    "IP:PORTA"
   ]
 }
 
 -> Evitar dar o sudo nos comandos docker
 sudo usermod -aG docker $(whoami)
+
+-> Rodar container com porta aleatória (-P)
+docker run -P --network hr-net hr-worker:v1
+
+
+-> Inspecionar os logs
+docker -F logs ID_CONTAINER
+
 
 ################################
 Run images docker with volumes
@@ -253,31 +261,6 @@ sudo docker run -d -p 27017:27017 -v ~/data:/data/db mongo
 
 REDIS - TESTE
 docker run --name REDIS_SERVER -p 6379:6379 --volume /data/redis-server:/data -d redis redis-server --appendonly yes
-
-####################################################################################################
-##                                       SERVIDORES - COTIC
-####################################################################################################
-
-##Servidor COTIC
-172.25.100.75
-
-##Servidor COTIC - DESEN
-172.25.100.157
-
-#Brunos Machine
-172.25.10.87
-
-############################
-Mongo
-database:
-172.25.100.157
-user: user_pca
-
-
-####################################################################################################
-##                                       DOCKER SWARM
-####################################################################################################
-
 
 ####################################################################################################
 ##                                       CREATE A LOCAL TAG AND SEND TO REPOSITORY
