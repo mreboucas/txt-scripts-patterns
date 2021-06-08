@@ -85,7 +85,7 @@ docker run -p 9000:9000 portainer/portainer
 #Delete all containers (preserva as imagens)
 docker container prune
 
-#Inspect secret docker image
+--Inspect secret docker image
 sudo docker exec IMAGE_ID cat "PATH_SECRET"
 
 Ex.:
@@ -148,6 +148,8 @@ odocker top ID_IMAGEM
 > Checar os logs que o container está usando
 docker logs ID_IMAGEM
 
+docker logs -f ID_IMAGEM
+
 > Remover container
 docker rm ID_IMAGEM
  -> Se tiver em uso (-f):
@@ -184,7 +186,7 @@ entrar no /volume: cd /volume
 criar o file: touch Dockerfile
 Quando cria no volume, ele repercute para a img do docker.
 
-> Inspect docker container logs
+-- Inspect docker container logs
 docker logs --details ID_CONTAINER
 
 
@@ -244,10 +246,6 @@ sudo usermod -aG docker $(whoami)
 
 -> Rodar container com porta aleatória (-P)
 docker run -P --network hr-net hr-worker:v1
-
-
--> Inspecionar os logs
-docker -F logs ID_CONTAINER
 
 
 ################################
